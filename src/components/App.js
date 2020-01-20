@@ -1,12 +1,16 @@
 import React from "react";
-import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
+import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
+import CreateLink from "./Link/CreateLink";
+import Login from "./Auth/Login";
+import ForgotPassword from "./Auth/ForgotPassword";
+import SearchLinks from "./Link/SearchLinks";
 import LinkList from "./Link/LinkList";
 import LinkDetail from "./Link/LinkDetail";
-import Header from './Header';
+import Header from "./Header";
 
 function App() {
   return (
-    <BowserRouter>
+    <BrowserRouter>
       <div className="app-container">
         <Header />
         <div className="route-container">
@@ -20,9 +24,9 @@ function App() {
             <Route path="/new/:page" component={LinkList} />
             <Route path="/link/:linkId" component={LinkDetail} />
           </Switch>
-          </div>
+        </div>
       </div>
-    </BowserRouter>
+    </BrowserRouter>
   );
 }
 
