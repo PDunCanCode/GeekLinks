@@ -7,7 +7,7 @@ function Header() {
       <div className="flex">
         <img src="/logo.png" alt="Hooks News Logo" className="logo" />
         <NavLink to="/" className="header-title">
-          Hooks News
+          Geek Links
         </NavLink>
         <NavLink to="/" className="header-link">
           new
